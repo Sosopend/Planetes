@@ -89,8 +89,12 @@ main .planete {
     background-color: #1B2430;
 }
 
-.planete:nth-child(even) {
+.tellurique:nth-child(even) {
     flex-direction: row-reverse ;
+}
+
+.gaz:nth-child(odd) {
+  flex-direction: row-reverse ;
 }
 
 /*
@@ -122,6 +126,34 @@ main .planete {
     margin: 0 10px;
 }
 
+footer {
+  background-color: #1b2430;
+}
+
+footer div {
+  max-width: 1200px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+footer section h2 {
+  margin: 0px 46px 36px 4px;
+  padding-top: 46px;
+}
+
+footer section ul {
+  list-style: none;
+}
+
+section ul a {
+  text-decoration: none;
+  color: #9F9F9F;
+}
+
+footer section h2 {
+  color: white;
+}
 
 
 
