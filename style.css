@@ -1,128 +1,132 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
 }
 
 a {
-    font-family: "montserrat";
+  font-family: "montserrat";
 }
 
 header .menu-container {
-    background-color: #1b2430;
+  background-color: #1b2430;
 }
 
 header .menu-container div {
-    max-width : 1200px;
-    display: flex;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 16px;
+  max-width: 75rem; /* 1200px / 16 */
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  padding-left: 1rem; /* 16px / 16 */
 }
 
 header nav ul {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 header nav a {
-    text-decoration: none;
-    color: white;
-    padding: 41px 12px;
-    display: block;
+  text-decoration: none;
+  color: white;
+  padding: 2.5625rem 0.75rem; /* 41px / 16 et 12px / 16 */
+  display: block;
 }
 
 header nav li:first-of-type a {
-    text-decoration: underline 3px;
-    text-underline-offset: 8px;
+  text-decoration: underline 0.1875rem; /* 3px / 16 */
+  text-underline-offset: 0.5rem; /* 8px / 16 */
 }
 
 header img {
-    width: 100%;
+  width: 100%;
+}
+
+main article h2 {
+  letter-spacing: 0.1875rem;
 }
 
 header .menu-container img {
-    height: 50px;
-    width: 75px;
-}   
+  height: 3.125rem; /* 50px / 16 */
+  width: 4.6875rem; /* 75px / 16 */
+}
 
 main div img {
-    width: 300px;
-    height: 280px;
+  max-width: 300px;
+  height: auto;
 }
 
 main .planete {
-    display: flex;
-    margin: 70px auto;
-    max-width: 1200px;
-    align-items: center;
+  display: flex;
+  margin: 4.375rem auto; /* 70px / 16 */
+  max-width: 75rem; /* 1200px / 16 */
+  align-items: center;
 }
 
 .planete article .type {
-    display: flex;
+  display: flex;
+  letter-spacing: 0.1875rem;
 }
 
 .gaz .type p:first-of-type {
-    padding: 12px 16px;
-    margin-right: 30px;
-    border-radius: 10px;
-    color: white;
-    background-color: #816797;
+  padding: 0.75rem 1rem; /* 12px / 16 et 16px / 16 */
+  margin-right: 1.875rem; /* 30px / 16 */
+  border-radius: 0.625rem; /* 10px / 16 */
+  color: white;
+  background-color: #816797;
 }
 
 .tellurique .type p:first-of-type {
-    padding: 12px 16px;
-    margin-right: 30px;
-    border-radius: 10px;
-    background-color: #D6D5A8;
+  padding: 0.75rem 1rem; /* 12px / 16 et 16px / 16 */
+  margin-right: 1.875rem; /* 30px / 16 */
+  border-radius: 0.625rem; /* 10px / 16 */
+  background-color: #D6D5A8;
 }
 
 .planete .type p:last-of-type {
-    padding: 12px 16px;
-    margin-right: 30px;
-    border-radius: 10px;
-    color: white;
-    background-color: #1B2430;
+  padding: 0.75rem 1rem; /* 12px / 16 et 16px / 16 */
+  margin-right: 1.875rem; /* 30px / 16 */
+  border-radius: 0.625rem; /* 10px / 16 */
+  color: white;
+  background-color: #1B2430;
 }
 
 .ligne {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    max-width: 1200px;
-    margin: auto;
-    color: #1B2430;
-    text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: 75rem; /* 1200px / 16 */
+  margin: auto;
+  color: #1B2430;
+  text-transform: uppercase;
 }
 
 .ligne::before,
 .ligne::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1px solid #000;
-    margin: 0 10px;
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+  margin: 0 0.625rem; /* 10px / 16 */
 }
 
 .gaz:nth-child(even) {
   flex-direction: row-reverse;
-  }
+}
 
 .tellurique:nth-child(even) {
-  flex-direction: row-reverse ;
+  flex-direction: row-reverse;
 }
 
 .type {
-margin: 20px 0px;
+  margin: 1.25rem 0; /* 20px / 16 */
 }
 
-.planete:nth-of-type(even) img{
-margin-left: 130px;
-flex-direction: row-reverse;
+.planete:nth-of-type(even) img {
+  margin-left: 8.125rem; /* 130px / 16 */
+  flex-direction: row-reverse;
 }
 
-.planete:nth-of-type(odd) img{
-  margin-right: 130px;
+.planete:nth-of-type(odd) img {
+  margin-right: 8.125rem; /* 130px / 16 */
   flex-direction: row-reverse;
 }
 
@@ -131,16 +135,16 @@ footer {
 }
 
 footer div {
-  max-width: 1200px;
+  max-width: 75rem; /* 1200px / 16 */
   display: flex;
   margin: auto;
   justify-content: space-around;
-  margin: 0px, 200px;
+  margin: 0 12.5rem; /* 200px / 16 */
 }
 
 footer section h2 {
-  margin-bottom: 36px;
-  padding-top: 46px;
+  margin-bottom: 2.25rem; /* 36px / 16 */
+  padding-top: 2.875rem; /* 46px / 16 */
   color: white;
 }
 
@@ -148,7 +152,7 @@ footer section ul {
   display: flex;
   list-style: none;
   flex-direction: column;
-  gap: 17px;
+  gap: 1.0625rem; /* 17px / 16 */
   align-items: center;
 }
 
@@ -158,9 +162,9 @@ section ul a {
 }
 
 footer section {
-  max-width: 400px;
-  margin: 0px, auto;
-  margin-bottom: 40px;
+  max-width: 25rem; /* 400px / 16 */
+  margin: 0 auto;
+  margin-bottom: 2.5rem; /* 40px / 16 */
 }
 
 footer p {
@@ -169,11 +173,11 @@ footer p {
 }
 
 footer p:first-of-type {
-  margin-top: 10px;
+  margin-top: 0.625rem; /* 10px / 16 */
 }
 
 footer p:last-of-type {
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem; /* 10px / 16 */
 }
 
 footer section.section-deux {
@@ -184,14 +188,14 @@ footer section.section-deux::before,
 footer section.section-deux::after {
   content: '';
   position: absolute;
-  top: 50px;
+  top: 3.125rem; /* 50px / 16 */
   bottom: 0;
-  width: 1px;
+  width: 0.0625rem; /* 1px / 16 */
   background-color: white;
 }
 
 footer section.section-deux::before {
-  left: -100px; 
+  left: -6.25rem; /* -100px / 16 */
 }
 
 footer a:hover {
@@ -200,17 +204,147 @@ footer a:hover {
 }
 
 footer section.section-deux::after {
-  right: -100px; 
+  right: -6.25rem; /* -100px / 16 */
 }
 
-  .ligne-deux {
-  border: 1px solid white;
-  bottom: 20px;
+.ligne-deux {
+  border: 0.0625rem solid white; /* 1px / 16 */
+  bottom: 1.25rem; /* 20px / 16 */
 }
 
+/* Pour les écrans de moins de 1024px (tablettes) */
+@media (max-width: 1024px) {
+  header .menu-container div {
+      display: flex; /* Assure que les éléments sont en ligne */
+      flex-direction: row; /* Garde la direction en ligne */
+      justify-content: space-between; /* Espace entre les éléments */
+      align-items: center; /* Centre les éléments verticalement */
+      width: 100%; /* Assure que le conteneur prend toute la largeur */
+      padding: 1rem; 
+  }
+
+  header nav ul {
+      display: flex; /* Garde les éléments de la navbar en ligne */
+      flex-direction: row; /* Aligne les éléments horizontalement */
+      align-items: center; /* Centre les éléments verticalement */
+      padding: 0; /* Supprime le padding par défaut */
+      list-style: none; /* Supprime les puces de la liste */
+      width: 100%; /* Assure que la liste prend toute la largeur */
+      justify-content: center; /* Centre les éléments de la liste */
+  }
+
+  header nav a {
+      padding: 1rem; /* Ajuste le padding pour un meilleur espacement */
+      font-size: 1rem; /* Ajuste la taille de la police */
+      margin: 0 1rem; /* Ajoute un espacement horizontal entre les éléments */
+  }
+
+  main .planete {
+      display: flex;
+      flex-direction: column; /* Aligne les éléments verticalement */
+      margin: 2rem auto; /* Centre les éléments */
+      text-align: center; /* Centre le texte */
+      width: 100%; /* Assure que chaque planete prend toute la largeur */
+  }
+
+  main div img {
+      max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de son conteneur */
+      height: auto; /* Ajuste la hauteur automatiquement pour conserver le ratio */
+      margin: 1rem 0; /* Ajoute un espacement vertical */
+  }
+
+  footer {
+      width: 100%; /* Assure que le footer prend toute la largeur */
+  }
+
+  footer div {
+      display: flex;
+      flex-direction: column; /* Aligne les éléments du footer verticalement */
+      align-items: center; /* Centre les éléments du footer */
+      width: 100%; /* Assure que le footer prend toute la largeur */
+  }
+}
+
+/* Pour les écrans de moins de 768px (mobiles) */
+@media (max-width: 768px) {
+  header .menu-container img {
+      height: 40px; 
+      width: auto; 
+  }
+
+  header nav a {
+      padding: 0.75rem; 
+      font-size: 0.875rem; 
+      margin: 0 0.5rem; /* Ajoute un espacement horizontal entre les éléments */
+  }
+
+  main div img {
+    max-width: 90%; /* Limite la largeur des images à 90% de leur conteneur */
+    height: auto; /* Conserve le ratio de l'image */
+    margin: 1rem auto; /* Centre les images */
+  }
+
+  footer section {
+      width: 100%; /* Assure que chaque section du footer prend toute la largeur */
+      text-align: center; /* Centre le texte dans le footer */
+  }
+}
+
+/* Pour les écrans de moins de 480px (petits mobiles) */
+@media (max-width: 480px) {
+  header .menu-container div {
+      padding: 0.5rem; 
+      width: 100%; /* Assure que le conteneur prend toute la largeur */
+  }
+
+  header nav a {
+      padding: 0.5rem font-size: 0.75rem; 
+      margin: 0 0.25rem; /* Réduit l'espacement horizontal entre les éléments */
+  }
+
+  main div img {
+    max-width: 95%; /* Limite la largeur des images à 95% de leur conteneur */
+    height: auto; /* Conserve le ratio de l'image */
+    margin: 0.5rem auto; /* Centre les images */
+  }
+
+  footer section {
+      margin-bottom: 1rem; 
+      width: 100%; /* Assure que chaque section du footer prend toute la largeur */
+      text-align: center; /* Centre le texte dans le footer */
+  }
+
+  footer p {
+      font-size: 0.875rem; 
+  }
+}
+
+/* Pour les écrans de moins de 320px (très petits mobiles) */
+@media (max-width: 320px) {
+  header .menu-container img {
+      height: 30px; 
+      width: auto; 
+  }
+
+  header nav a {
+      padding: 0.5rem; 
+      font-size: 0.65rem; 
+      margin: 0 0.25rem; /* Réduit l'espacement horizontal entre les éléments */
+  }
+
+  main div img {
+    max-width: 95%; /* Limite la largeur des images à 95% de leur conteneur */
+    height: auto; /* Conserve le ratio de l'image */
+    margin: 0.5rem auto; /* Centre les images */
+  }
+
+  footer section {
+      margin-bottom: 1rem; 
+      width: 100%; /* Assure que chaque section du footer prend toute la largeur */
+      text-align: center; /* Centre le texte dans le footer */
+  }
+}
 /* Polices */
-
-
 
 .montserrat {
   font-family: "Montserrat", sans-serif;
@@ -219,74 +353,73 @@ footer section.section-deux::after {
 }
 
 .roboto-thin {
-    font-family: "Roboto", serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .roboto-light {
-    font-family: "Roboto", serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .roboto-regular {
-    font-family: "Roboto", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .roboto-medium {
-    font-family: "Roboto", serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .roboto-bold {
-    font-family: "Roboto", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .roboto-black {
-    font-family: "Roboto", serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .roboto-thin-italic {
-    font-family: "Roboto", serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .roboto-light-italic {
-    font-family: "Roboto", serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .roboto-regular-italic {
-    font-family: "Roboto", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .roboto-medium-italic {
-    font-family: "Roboto", serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .roboto-bold-italic {
-    font-family: "Roboto", serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .roboto-black-italic {
-    font-family: "Roboto", serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-  
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", serif;
+  font-weight: 900;
+  font-style: italic;
+}
