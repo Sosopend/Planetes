@@ -20,6 +20,10 @@ header .menu-container div {
   padding-left: 1rem; /* 16px / 16 */
 }
 
+header .menu-container div {
+    align-items: center;
+}
+
 header nav ul {
   display: flex;
   list-style: none;
@@ -213,7 +217,7 @@ footer section.section-deux::after {
 }
 
 /* Pour les écrans de moins de 1024px (tablettes) */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   header .menu-container div {
       display: flex; /* Assure que les éléments sont en ligne */
       flex-direction: row; /* Garde la direction en ligne */
@@ -266,10 +270,10 @@ footer section.section-deux::after {
 }
 
 /* Pour les écrans de moins de 768px (mobiles) */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   header .menu-container img {
-      height: 40px; 
-      width: auto; 
+      height: auto; 
+      max-width: 48rem; 
   }
 
   header nav a {
@@ -291,14 +295,15 @@ footer section.section-deux::after {
 }
 
 /* Pour les écrans de moins de 480px (petits mobiles) */
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   header .menu-container div {
       padding: 0.5rem; 
       width: 100%; /* Assure que le conteneur prend toute la largeur */
   }
 
   header nav a {
-      padding: 0.5rem font-size: 0.75rem; 
+      padding: 0.5rem;
+      font-size: 0.75rem; 
       margin: 0 0.25rem; /* Réduit l'espacement horizontal entre les éléments */
   }
 
@@ -320,7 +325,7 @@ footer section.section-deux::after {
 }
 
 /* Pour les écrans de moins de 320px (très petits mobiles) */
-@media (max-width: 320px) {
+@media screen and (max-width: 320px) {
   header .menu-container img {
       height: 30px; 
       width: auto; 
@@ -344,6 +349,7 @@ footer section.section-deux::after {
       text-align: center; /* Centre le texte dans le footer */
   }
 }
+
 /* Polices */
 
 .montserrat {
