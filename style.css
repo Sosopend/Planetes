@@ -56,18 +56,15 @@ main .planete {
     display: flex;
     margin: 70px auto;
     max-width: 1200px;
+    align-items: center;
 }
 
 .planete article .type {
     display: flex;
 }
 
-.planete article{
-    margin-left: 130px;
-}
-
 .gaz .type p:first-of-type {
-    padding: 16px 12px;
+    padding: 12px 16px;
     margin-right: 30px;
     border-radius: 10px;
     color: white;
@@ -75,39 +72,19 @@ main .planete {
 }
 
 .tellurique .type p:first-of-type {
-    padding: 16px 12px;
+    padding: 12px 16px;
     margin-right: 30px;
     border-radius: 10px;
     background-color: #D6D5A8;
 }
 
 .planete .type p:last-of-type {
-    padding: 16px 12px;
+    padding: 12px 16px;
     margin-right: 30px;
     border-radius: 10px;
     color: white;
     background-color: #1B2430;
 }
-
-.tellurique:nth-child(even) {
-    flex-direction: row-reverse ;
-}
-
-.gaz:nth-child(odd) {
-  flex-direction: row-reverse ;
-}
-
-/*
-
-.planete img:nth-of-type(odd) {
-    margin: 50px 10px 0px 0px;
-}
-
-.planete img:nth-of-type(even) {
-    margin: 50px 0px 10px 0px;
-}
-
-*/
 
 .ligne {
     display: flex;
@@ -116,6 +93,7 @@ main .planete {
     max-width: 1200px;
     margin: auto;
     color: #1B2430;
+    text-transform: uppercase;
 }
 
 .ligne::before,
@@ -126,6 +104,28 @@ main .planete {
     margin: 0 10px;
 }
 
+.gaz:nth-child(even) {
+  flex-direction: row-reverse;
+  }
+
+.tellurique:nth-child(even) {
+  flex-direction: row-reverse ;
+}
+
+.type {
+margin: 20px 0px;
+}
+
+.planete:nth-of-type(even) img{
+margin-left: 130px;
+flex-direction: row-reverse;
+}
+
+.planete:nth-of-type(odd) img{
+  margin-right: 130px;
+  flex-direction: row-reverse;
+}
+
 footer {
   background-color: #1b2430;
 }
@@ -134,16 +134,22 @@ footer div {
   max-width: 1200px;
   display: flex;
   margin: auto;
-  justify-content: center;
+  justify-content: space-around;
+  margin: 0px, 200px;
 }
 
 footer section h2 {
-  margin: 0px 46px 36px 4px;
+  margin-bottom: 36px;
   padding-top: 46px;
+  color: white;
 }
 
 footer section ul {
+  display: flex;
   list-style: none;
+  flex-direction: column;
+  gap: 17px;
+  align-items: center;
 }
 
 section ul a {
@@ -151,11 +157,56 @@ section ul a {
   color: #9F9F9F;
 }
 
-footer section h2 {
-  color: white;
+footer section {
+  max-width: 400px;
+  margin: 0px, auto;
+  margin-bottom: 40px;
 }
 
+footer p {
+  color: white;
+  text-align: center;
+}
 
+footer p:first-of-type {
+  margin-top: 10px;
+}
+
+footer p:last-of-type {
+  padding-bottom: 10px;
+}
+
+footer section.section-deux {
+  position: relative;
+}
+
+footer section.section-deux::before,
+footer section.section-deux::after {
+  content: '';
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  width: 1px;
+  background-color: white;
+}
+
+footer section.section-deux::before {
+  left: -100px; 
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+footer section.section-deux::after {
+  right: -100px; 
+}
+
+  .ligne-deux {
+  border: 1px solid white;
+  bottom: 20px;
+}
 
 /* Polices */
 

@@ -2,47 +2,45 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="En apprendre plus sur les planètes du système solaire.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <title>Document</title>
+    <link rel="shortcut icon" href="./src/icon.webp">
+    <title>Les Planètes</title>
 </head>
 <body>
     <header>
 
-        <!-- Ce qui contient la navbar et le logo -->
         <div class="menu-container">
             <div>
-                <img src="./src/logo.png" alt="">
+                <img src="./src/logo.png" alt="Logo du site représentant une planète">
                 <nav>
                     <ul>
-                        <li><a href="#mercure">Mercure</a></li>
-                        <li><a href="#venus">Vénus</a></li>
-                        <li><a href="#terre">La Terre</a></li>
-                        <li><a href="#mars">Mars</a></li>
-                        <li><a href="#jupiter">Jupiter</a></li>
-                        <li><a href="#saturne">Saturne</a></li>
-                        <li><a href="#uranus">Uranus</a></li>
-                        <li><a href="#neptune">Neptune</a></li>
+                        <li><a href="#mercure" title="Redirection vers la section Mercure" aria-label="Redirection vers la section Mercure">Mercure</a></li>
+                        <li><a href="#venus" title="Redirection vers la section Vénus" aria-label="Redirection vers la section Vénus">Vénus</a></li>
+                        <li><a href="#terre" title="Redirection vers la section La Terre" aria-label="Redirection vers la section La Terre">La Terre</a></li>
+                        <li><a href="#mars" title="Redirection vers la section Mars" aria-label="Redirection vers la section Mars">Mars</a></li>
+                        <li><a href="#jupiter" title="Redirection vers la section Jupiter" aria-label="Redirection vers la section Jupiter">Jupiter</a></li>
+                        <li><a href="#saturne" title="Redirection vers la section Saturne" aria-label="Redirection vers la section Saturne">Saturne</a></li>
+                        <li><a href="#uranus" title="Redirection vers la section Uranus" aria-label="Redirection vers la section Uranus">Uranus</a></li>
+                        <li><a href="#neptune" title="Redirection vers la section Neptune" aria-label="Redirection vers la section Neptune">Neptune</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
 
-        <!-- Image de fond -->
         <img src="./src/main.png    " alt="">
 
     </header>
 
     <main>
-
-        <!-- Dupliquer la DIV 8 fois et adapter les contenus -->
+<section>
         <div class="planete tellurique">
-            <img src="./src/mercure.png" alt="">
+            <img src="./src/mercure.png" alt="Image de la planète Mercure">
             <article>
                 <h2 id="mercure">Mercure</h2>
                 <div class="type">
@@ -60,7 +58,7 @@
         </div>
 
         <div class="planete tellurique">
-            <img src="./src/venus.png" alt="">
+            <img src="./src/venus.png" alt="Image de la planète Vénus">
             <article>
                 <h2 id="venus">Vénus</h2>
                 <div class="type">
@@ -78,7 +76,7 @@
         </div>
 
         <div class="planete tellurique">
-            <img src="./src/terre.png" alt="">
+            <img src="./src/terre.png" alt="Image de la planète Terre">
             <article>
                 <h2 id="terre">La Terre</h2>
                 <div class="type">
@@ -96,7 +94,7 @@
         </div>
 
         <div class="planete tellurique">
-            <img src="./src/mars.png" alt="">
+            <img src="./src/mars.png" alt="Image de la planète Mars">
             <article>
                 <h2 id="mars">Mars</h2>
                 <div class="type">
@@ -112,11 +110,12 @@
                 </p>
             </article>
         </div>
+    </section>
 
-        <div class="ligne">CEINTURE D'ASTEROÏDES</div>
-
+        <div class="ligne">Ceinture d'astéroïdes</div>
+<section>
         <div class="planete gaz">
-            <img src="./src/jupiter.png" alt="">
+            <img src="./src/jupiter.png" alt="Image de la planète Jupiter">
             <article>
                 <h2 id="jupiter">Jupiter</h2>
                 <div class="type">
@@ -134,7 +133,7 @@
         </div>
 
         <div class="planete gaz">
-            <img src="./src/saturne.png" alt="">
+            <img src="./src/saturne.png" alt="Image de la planète Saturne">
             <article>
                 <h2 id="saturne">Saturne</h2>
                 <div class="type">
@@ -152,7 +151,7 @@
         </div>
 
         <div class="planete gaz">
-            <img src="./src/uranus.png" alt="">
+            <img src="./src/uranus.png" alt="Image de la planète Uranus">
             <article>
                 <h2 id="uranus">Uranus</h2>
                 <div class="type">
@@ -170,7 +169,7 @@
         </div>
 
         <div class="planete gaz">
-            <img src="./src/neptune.png" alt="">
+            <img src="./src/neptune.png" alt="Image de la planète Neptune">
             <article>
                 <h2 id="neptune">Neptune</h2>
                 <div class="type">
@@ -186,42 +185,44 @@
                 </p>
             </article>
         </div>
+    </section>
     </main>
 
     <footer>
         <div>
-            <!-- Dupliquer 3 fois et adapter les contenus -->
+
             <section>
                 <h2>Les Télluriques</h2>
                 <ul>
-                    <li><a href="mercure">Mercure</a></li>
-                    <li><a href="venus">Vénus</a></li>
-                    <li><a href="terre">La Terre</a></li>
-                    <li><a href="mars">Mars</a></li>
+                    <li><a href="#mercure" title="Redirection vers la section Mercure" aria-label="Redirection vers la section Mercure">Mercure</a></li>
+                    <li><a href="#venus" title="Redirection vers la section Vénus" aria-label="Redirection vers la section Vénus">Vénus</a></li>
+                    <li><a href="#terre" title="Redirection vers la section La Terre" aria-label="Redirection vers la section La Terre">La Terre</a></li>
+                    <li><a href="#mars" title="Redirection vers la section Mars" aria-label="Redirection vers la section Mars">Mars</a></li>
                 </ul>
             </section>
 
-            <section>
+            <section class="section-deux">
                 <h2>Les Gazeuses</h2>
                 <ul>
-                    <li><a href="jupiter">Jupiter</a></li>
-                    <li><a href="saturne">Saturne</a></li>
-                    <li><a href="uranus">Uranus</a></li>
-                    <li><a href="neptune">Neptune</a></li>
+                    <li><a href="#jupiter" title="Redirection vers la section Jupiter" aria-label="Redirection vers la section Jupiter">Jupiter</a></li>
+                    <li><a href="#saturne" title="Redirection vers la section Saturne" aria-label="Redirection vers la section Saturne">Saturne</a></li>
+                    <li><a href="#uranus" title="Redirection vers la section Uranus" aria-label="Redirection vers la section Uranus">Uranus</a></li>
+                    <li><a href="#neptune" title="Redirection vers la section Neptune" aria-label="Redirection vers la section Neptune">Neptune</a></li>
                 </ul>
             </section>
 
             <section>
                 <h2>Partenaires</h2>
                 <ul>
-                    <li><a href="">Ciel & Espace</a></li>
-                    <li><a href="">Le Journal du Ciel</a></li>
+                    <li><a href="https://www.cieletespace.fr/" target="_blank" title="Redirection vers le site Ciel & Espace" aria-label="Redirection vers le site Ciel & Espace">Ciel & Espace</a></li>
+                    <li><a href="https://www.lafontaineauxlivres.fr/product/show/9782343108964/journal-du-ciel" target="_blank" title="Redirection vers le site La Fontaine Aux Livres sur la fiche produit du livre Journal du Ciel" aria-label="Redirection vers le site La Fontaine Aux Livres sur la fiche produit du livre Journal du Ciel">Le Journal du Ciel</a></li>
                 </ul>
             </section>
         </div>
-        <p>Maquette réalisée dans un but pédagogique par M.PETIT Louis...</p>
+        <div class="ligne-deux"></div>
+        <p>Maquette réalisée dans un but pédagogique par</p>
+        <p>© M. PETIT Louis | M. VIGREUX Joël | M. GIVRY Simon | M. MOY Yohann</p>
     </footer>
-    <!--Nouveau commit CSS-->
 
 </body>
 </html>
